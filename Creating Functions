@@ -1,0 +1,54 @@
+// Example 1: 
+// Output: Hello, User 
+
+int main() 
+{ 
+    sayHi(); 
+    
+    return 0;  
+} 
+
+void sayHi() 
+{ 
+    printf("Hello, User"); 
+} 
+
+ 
+// Example 2: 
+/*Output: Hello Mike 
+          Hello Tom 
+          Hello Oscar*/ 
+
+int main() 
+{ 
+    sayHi("Mike"); 
+    sayHi("Tom"); 
+    sayHi("Oscar"); 
+    
+    return 0; 
+} 
+
+void sayHi(char name[]) 
+{ 
+    printf("Hello %s/n", name); 
+} 
+
+ 
+// Example 3: 
+/*Output: Hello Mike, you are 40 
+          Hello Tom, you are 23 
+         Hello Oscar, you are 70*/ 
+
+int main() 
+{ 
+    sayHi("Mike", 40); 
+    sayHi("Tom", 23); 
+    sayHi("Oscar", 70); 
+    
+    return 0; 
+} 
+
+void sayHi(char name[], int age) 
+{ 
+    printf("Hello %s, you are %d/n", name, age); 
+} 
