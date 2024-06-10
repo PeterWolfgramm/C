@@ -1,0 +1,7 @@
+// The following is the standard format for code in C: 
+
+int main() 
+{ 
+
+    return 0; 
+} 
