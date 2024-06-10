@@ -1,0 +1,17 @@
+// The following code will cube an input – 3, and display the result – 9. 
+// Output: 9 
+
+double cube(double num)   // double cube is the variable that will be returned to the user – a double                                                   
+                          // double num is the variable that serves as the input 
+{ 
+    double result = num * num * num;   // double result is the variable that serves as the output of putting double num into the variable double cube 
+    
+    return result;   // This allows to return information to the user, in this case the variable result 
+} 
+
+int main() 
+{ 
+    printf("Answer: %f", cube(3.0)); 
+    
+    return 0; 
+} 
