@@ -1,0 +1,3 @@
+printf("Hello world");   /*This will display the text Hello world*/ 
+
+printf("Hello world");   // This will display the text Hello world 
