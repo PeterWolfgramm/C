@@ -1,53 +1,26 @@
-Example1: 
+// Example 1: 
+// Output: Jim 
 
- 
-
-//Output: Jim 
-
- 
-
-struct Student{   //Below struct are all the variables containing data 
-
-char name[50];   //[50] means the variable char name can store up to 50 characters 
-
-char major [50]; 
-
-int age;  
-
-double gpa; 
-
+struct Student{   // Below struct are all the variables containing data 
+    char name[50];   // [50] means the variable char name can store up to 50 characters 
+    char major [50]; 
+    int age;  
+    double gpa; 
 }; 
 
- 
-
 int main(){ 
-
- 
-
-struct Student student1;   //Student is the name of the struct 
-
-                                               //student1 is the name of the container 
-
-student1.age = 22;   //Must type . after the container to type the contained variable 
-
-student1.gpa = 3.2; 
-
-strcpy(student1.name, "Jim");   //strcpy allows to assign string to a variable 
-
-strcpy(student1.major, "Business"); 
-
- 
-
-printf("%s", student1.name); 
-
- 
-
-return 0; 
-
+  struct Student student1;   // Student is the name of the struct student1 is the name of the container 
+  student1.age = 22;   // Must type . after the container to type the contained variable 
+  student1.gpa = 3.2; 
+  strcpy(student1.name, "Jim");   // strcpy allows to assign string to a variable 
+  strcpy(student1.major, "Business"); 
+  
+  printf("%s", student1.name); 
+  
+  return 0; 
 } 
 
  
-
 // Example 2: 
 // Output: Pam 
 
