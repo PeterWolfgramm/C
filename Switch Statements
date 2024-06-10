@@ -1,0 +1,28 @@
+// Output: how you did on a test depending on the grade you got 
+
+int main() 
+{ 
+    char grade = 'A' 
+    
+    switch(grade){   // type switch and then put the variable you want to check in () 
+    case 'A' :   // case represents the possibility of what the variable is  
+        printf("You did great!");  
+        break;   // break tells the program to stop checking the variable if it is correctly identified 
+    case 'B' :  
+        printf("You did alright!");  
+        break;  
+    case 'C' :  
+        printf("You did poorly");  
+        break;  
+    case 'D' :  
+        printf("You did very bad");  
+        break;  
+    case 'F' :  
+        printf("You failed!");  
+        break;  
+    default :  
+        printf("Invalid grade"); 
+    } 
+    
+    return 0; 
+} 
