@@ -1,1 +1,125 @@
+// Example 1: 
+// The following code will display the larger number between num1 and num2 
+// Output: 10  
 
+int max(int num1, int num2){ 
+    int result;  
+    if(num1 > num2){   // if operation checks whether a condition is true or false 
+        result = num1;   // what happens if statement is true 
+    } else {    
+        result = num2;   // What happens if statement is false 
+    } 
+    return result; 
+    
+int main() 
+{ 
+    printf("%d", max(4, 10)) 
+    
+    return 0; 
+} 
+
+
+// Example 2:  
+// The following code will display the larger number between num1, num2, and num3 
+// Output: 15  
+
+int max(num1, num2, num3){ 
+    int result;  
+    if(num1 >= num2 && num1 >= num3){   // checks condition 
+                                        /*&& means "and", this allows to add another  
+                                        statement to the condition. If both statements are true,  
+                                        the entire condition is true.*/ 
+        result = num1; 
+    
+    } else if(num2 >= num1 && num2 >=num3){   // if previous condition was false, checks another condition
+        result = num2; 
+    } else {   // if all previous conditions were false 
+        result = num3; 
+    } 
+    return result; 
+
+int main() 
+{ 
+    printf("%d", max(5, 10, 15)) 
+    
+    return 0; 
+} 
+
+ 
+// Example 3: 
+// Output: True 
+
+int main() 
+    { 
+    if(2 > 5 || 3 > 1){   // || means "or", only one of the statements needs to be true for the entire condition to be true 
+        printf("True"); 
+    } else {   // if neither statement in the condition was true 
+        printf("False"); 
+    } 
+    
+    return 0; 
+} 
+
+ 
+// Example 4: 
+// Output: False 
+
+int main() 
+{ 
+    if(3 != 2){   // != means not equal to 
+                  // In general, ! negates a condition (see next example)  
+        printf("True"); 
+    } else { 
+        printf("False"); 
+    } 
+    
+    return 0; 
+} 
+
+ 
+// Example 5: 
+// Output: False 
+
+int main() 
+{ 
+    if(!(5 > 3)){   // ! negates the next condition. If the next condition is true, ! makes it false. If the condition is false, ! makes it true
+        printf("True"); 
+    } else { 
+        printf("False"); 
+    } 
+    
+    return 0; 
+} 
+
+ 
+// Example 6: 
+// The following code replicates a calculator 
+// The user inputs two numbers and an operation: +, -, /, * 
+
+int main() 
+{ 
+    double num1;   // variable for first number 
+    double num2;   // variable for second number 
+    char op;   // variable for operation sign 
+    
+    printf("Enter a number: "); 
+    scanf("%lf", &num1); 
+    printf("Enter operator: "); 
+    scanf(" %c", &op); 
+    printf("Enter a number: "); 
+    scanf("%lf", &num2); 
+    
+    if(op == '+'){ 
+        printf("%f", num1 + num2); 
+    } else if(op == '-') { 
+        printf("%f", num1 - num2); 
+    } else if(op == '/'){ 
+        printf("%f", num1 / num2); 
+    } else if(op == *){ 
+        printf("%f", num1 * num2); 
+    } else { 
+        printf("Invalid operator");   // if user inputs something that is not +, -, /, or *  
+    } 
+    
+    return 0; 
+} 
