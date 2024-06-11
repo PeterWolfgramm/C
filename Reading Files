@@ -1,0 +1,37 @@
+// Example 1:  
+// Output: Jim – salesman  
+
+int main() 
+{ 
+    char line[255];   // Variable line will store text up to 255 characters  
+    
+    FILE * fpointer = fopen("employees.txt", "r");   // mode r allows to read the file 
+    
+    fgets(line, 255, fpointer);   // fgets allows to read a line from the text 
+                                  // 255 is the amount of characters each line can store 
+                                  // fpointer is the file pointer, it increments after each fgets function 
+    printf("%s", line);   // The first line will be displayed as fgets is used once 
+    
+    fclose(fpointer);   
+    
+    return 0; 
+} 
+
+ 
+// Example 2:  
+// Output: Pam – accountant  
+
+int main() 
+{ 
+    char line[255];   
+    
+    FILE * fpointer = fopen("employees.txt", "r");    
+    
+    fgets(line, 255, fpointer);   
+    fgets(line, 255, fpointer);  
+    printf("%s", line);   // fgets is used twice, so the second line will be displayed 
+    
+    fclose(fpointer);   
+    
+    return 0; 
+} 
