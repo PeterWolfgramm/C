@@ -1,0 +1,29 @@
+// Example 1: 
+// Output: age's memory address: followed by the memory address of age 
+
+int main() 
+{ 
+    int age = 30;  
+    
+    printf("age's memory address: %p\n", &age); 
+    
+    return 0; 
+} 
+
+
+// Example 2: 
+// Output: age's memory address: followed by the memory address of age 
+
+int main() 
+{ 
+    int age = 30;  
+    int * pAge = &age;   // int * pAge stores the memory address of age 
+    double gpa = 3.4;  
+    double * pGpa = &gpa;   // double * pGpa stores the memory address of gpa 
+    char grade = 'A'; 
+    char * pGrade = &grade;   // char * pGrade stores the memory address of grade 
+    
+    printf("age's memory address: %p\n", &age); 
+    
+    return 0; 
+} 
