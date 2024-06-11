@@ -1,0 +1,40 @@
+// Example 1: 
+/*The following code will create a new file called employees that will display: Jim – salesman 
+                                                                                Pam – accountant*/  
+
+ 
+
+int main() 
+{ 
+    FILE * fpointer = fopen("employees.txt", "w");   // fpointer stores the memory address to the file 
+                                                     // A new file is created called employees. Notice employees is a text file 
+                                                     // fopen opens the new file 
+                                                     // w is the mode 
+    
+    fprintf(fpointer, "Jim – salesman\nPam – accountant");   // fprintf allows to print information that will be displayed in the created file 
+                                                             // Following fprintf must be the pointer and text to be displayed. 
+    
+    fclose(fpointer);   // This function closes the file fpointer 
+    
+    return 0; 
+} 
+
+ 
+// Example 2:  
+// The following code will only work if the previous example code was run 
+/*Output: Jim – salesman 
+          Pam – accountant 
+          Oscar – customer service*/  
+
+
+int main() 
+{ 
+    FILE * fpointer = fopen("employees.txt", "a");   // mode a allows to add to a file 
+                                                     // Oscar – customer service is added to the last file  
+    
+    fprintf(fpointer, "\nOscar – customer service");    
+    
+    fclose(fpointer);   // This function closes the file fpointer 
+    
+    return 0; 
+} 
