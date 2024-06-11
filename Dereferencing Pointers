@@ -1,0 +1,27 @@
+// Example 1: 
+// Output: memory address of int age 
+
+int main() 
+{ 
+    int age = 30;  
+    int *pAge = &age; 
+    
+    printf("%p", pAge);  
+    
+    return 0; 
+} 
+
+ 
+// Example 2:  
+// Output: 30 
+
+int main() 
+{ 
+    int age = 30;  
+    int *pAge = &age;  
+    
+    printf("%d", *pAge);   // The * in front of pAge dereferences variable pAge 
+                           // %d is in place of %p since pAge is dereferenced. printf will display a double, not a memory address. 
+    
+    return 0; 
+} 
