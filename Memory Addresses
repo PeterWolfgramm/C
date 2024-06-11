@@ -1,0 +1,28 @@
+// Example 1: 
+// Output: memory address for where int age is stored 
+
+int main() 
+{ 
+    int age = 30;  
+    double gpa = 3.4;  
+    char grade = 'A' 
+    
+    printf("%p", &age) 
+    
+    return 0; 
+} 
+
+ 
+// Example 2: 
+// Output: memory address for where int age, double gpa, and char grade are stored 
+
+int main() 
+{ 
+    int age = 30;  
+    double gpa = 3.4;  
+    char grade = 'A' 
+    
+    printf("age: %p/ngpa: %p/ngrade: %p", &age, &gpa, &grade) 
+    
+    return 0; 
+} 
