@@ -1,0 +1,23 @@
+/*Output: 1, 2 
+          3, 4 
+          5, 6*/ 
+
+int main() 
+{ 
+    int nums[3][2] = {    
+        {1, 2},    
+        {3, 4},    
+        {5, 6}    
+    }; 
+    
+    int i, j;   // Declares i and j as variables 
+    for(i = 0; i < 3; i = i + 1){   // The variable i represents the index of the contained arrays 
+        for(j = 0; j < 2; j = j + 1){   /*The variable j represents the index of the item within 
+                                                a contained array.*/ 
+            printf("%d,", nums[i][j]);   // The item at index j of the array at index i will be displayed 
+        } 
+        printf("\n"); 
+    } 
+    
+    return 0; 
+} 
