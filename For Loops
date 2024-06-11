@@ -1,0 +1,19 @@
+/*Output: 4 
+          8 
+          15 
+          16 
+          23 
+          42*/ 
+
+int main() 
+{ 
+    int luckyNumbers[] = {4, 8, 15, 16, 23, 42}; 
+    int i;  
+    for(i = 0; i < 6; i = i + 1){   // variable i starts with an initial value of 0 
+                                    // The loop will continue as long as i < 6 
+                                    // After each loop, i increases by 1 
+        printf("%d\n", luckyNumbers[i]);   // The number in position i will be displayed 
+    }  
+    
+    return 0; 
+} 
