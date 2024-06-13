@@ -1,6 +1,7 @@
 // Example 1: 
 // Output: age's memory address: followed by the memory address of age 
 
+#include <stdio.h>
 int main() 
 { 
     int age = 30;  
