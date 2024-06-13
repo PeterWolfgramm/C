@@ -1,6 +1,7 @@
 // Example 1: 
 // Output: Hello, User 
 
+#include <stdio.h>
 int main() 
 { 
     sayHi(); 
@@ -19,6 +20,7 @@ void sayHi()
           Hello Tom 
           Hello Oscar*/ 
 
+#include <stdio.h>
 int main() 
 { 
     sayHi("Mike"); 
@@ -30,7 +32,7 @@ int main()
 
 void sayHi(char name[]) 
 { 
-    printf("Hello %s/n", name); 
+    printf("Hello %s\n", name); 
 } 
 
  
@@ -39,6 +41,7 @@ void sayHi(char name[])
           Hello Tom, you are 23 
          Hello Oscar, you are 70*/ 
 
+#include <stdio.h>
 int main() 
 { 
     sayHi("Mike", 40); 
@@ -50,5 +53,5 @@ int main()
 
 void sayHi(char name[], int age) 
 { 
-    printf("Hello %s, you are %d/n", name, age); 
+    printf("Hello %s, you are %d\n", name, age); 
 } 
