@@ -20,7 +20,7 @@ int main()
 { 
     int oddNumbers[] = {1, 3, 5, 7, 9}; 
     oddNumbers[4] = 13; 
-    printf(%d, oddNumbers[4])   // 13 replaces 9 as the fourth value in oddNumbers 
+    printf("%d", oddNumbers[4]);   // 13 replaces 9 as the fourth value in oddNumbers 
     
     return 0;  
 } 
