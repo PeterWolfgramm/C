@@ -1,3 +1,8 @@
-printf("Hello world");   /*This will display the text Hello world*/ 
-
-printf("Hello world");   // This will display the text Hello world 
+int main()
+{
+    printf("Hello world");   /*This will display the text Hello world*/ 
+    
+    printf("Hello world");   // This will display the text Hello world 
+    
+    return 0; 
+}
