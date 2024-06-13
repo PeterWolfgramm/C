@@ -1,6 +1,7 @@
 // Example 1:  
 // Output: You are (x number) years old 
 
+#include <stdio.h>
 int main() 
 { 
     int age; 
@@ -15,6 +16,7 @@ int main()
 // Example 2: 
 // Output: Your name is (x name) 
 
+#include <stdio.h>
 int main()  
 { 
     char name[20];   // The [20] limits the user input to 20 characters 
