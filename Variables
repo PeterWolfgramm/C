@@ -1,12 +1,13 @@
 /*Output: There once was a man named Tom 
           He was 67 years old.*/ 
 
+#include <stdio.h>
 int main() 
 { 
     char characterName[] = "Tom";   // [] is for storing string 
     int characterAge = 67; 
     printf("There once was a man named %s\n", characterName);   // characterName is the variable that replaces %s. 
-    printf("he was %d years old.\n", characterAge);   // characterAge is the variable that replaces %d. 
+    printf("He was %d years old.\n", characterAge);   // characterAge is the variable that replaces %d. 
     
     return 0;  
 }  
