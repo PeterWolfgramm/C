@@ -2,7 +2,7 @@
 
 int main() 
 { 
-    printf("Hello world\n");   // /n adds new line 
+    printf("Hello world\n");   // \n adds new line 
                                // (You don't have to add \n) 
     
      
