@@ -1,5 +1,6 @@
 // Output: 1 
 
+#include <stdio.h>
 int main() 
 { 
     int nums[3][2] = {   // int nums is a 2D array, an array containing 3 different arrays  
