@@ -1,6 +1,7 @@
 // Example 1: 
 // Output: memory address for where int age is stored 
 
+#include <stdio.h>
 int main() 
 { 
     int age = 30;  
@@ -12,10 +13,11 @@ int main()
     return 0; 
 } 
 
- 
+
 // Example 2: 
 // Output: memory address for where int age, double gpa, and char grade are stored 
 
+#include <stdio.h>
 int main() 
 { 
     int age = 30;  
