@@ -6,9 +6,9 @@ int main()
 { 
     int age = 30;  
     double gpa = 3.4;  
-    char grade = 'A' 
+    char grade = 'A';
     
-    printf("%p", &age) 
+    printf("%p", &age); 
     
     return 0; 
 } 
@@ -22,9 +22,9 @@ int main()
 { 
     int age = 30;  
     double gpa = 3.4;  
-    char grade = 'A' 
+    char grade = 'A'; 
     
-    printf("age: %p/ngpa: %p/ngrade: %p", &age, &gpa, &grade) 
+    printf("age: %p\ngpa: %p\ngrade: %p", &age, &gpa, &grade); 
     
     return 0; 
 } 
