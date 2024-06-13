@@ -2,6 +2,7 @@
 // The following code will display the larger number between num1 and num2 
 // Output: 10  
 
+#include <stdio.h>
 int max(int num1, int num2){ 
     int result;  
     if(num1 > num2){   // if operation checks whether a condition is true or false 
@@ -13,7 +14,7 @@ int max(int num1, int num2){
     
 int main() 
 { 
-    printf("%d", max(4, 10)) 
+    printf("%d", max(4, 10)); 
     
     return 0; 
 } 
@@ -23,6 +24,7 @@ int main()
 // The following code will display the larger number between num1, num2, and num3 
 // Output: 15  
 
+#include <stdio.h>
 int max(num1, num2, num3){ 
     int result;  
     if(num1 >= num2 && num1 >= num3){   // checks condition 
@@ -40,7 +42,7 @@ int max(num1, num2, num3){
 
 int main() 
 { 
-    printf("%d", max(5, 10, 15)) 
+    printf("%d", max(5, 10, 15)); 
     
     return 0; 
 } 
@@ -49,6 +51,7 @@ int main()
 // Example 3: 
 // Output: True 
 
+#include <stdio.h>
 int main() 
     { 
     if(2 > 5 || 3 > 1){   // || means "or", only one of the statements needs to be true for the entire condition to be true 
@@ -62,8 +65,9 @@ int main()
 
  
 // Example 4: 
-// Output: False 
+// Output: True 
 
+#include <stdio.h>
 int main() 
 { 
     if(3 != 2){   // != means not equal to 
@@ -80,6 +84,7 @@ int main()
 // Example 5: 
 // Output: False 
 
+#include <stdio.h>
 int main() 
 { 
     if(!(5 > 3)){   // ! negates the next condition. If the next condition is true, ! makes it false. If the condition is false, ! makes it true
@@ -96,6 +101,7 @@ int main()
 // The following code replicates a calculator 
 // The user inputs two numbers and an operation: +, -, /, * 
 
+#include <stdio.h>
 int main() 
 { 
     double num1;   // variable for first number 
@@ -115,7 +121,7 @@ int main()
         printf("%f", num1 - num2); 
     } else if(op == '/'){ 
         printf("%f", num1 / num2); 
-    } else if(op == *){ 
+    } else if(op == '*'){ 
         printf("%f", num1 * num2); 
     } else { 
         printf("Invalid operator");   // if user inputs something that is not +, -, /, or *  
