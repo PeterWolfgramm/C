@@ -1,8 +1,9 @@
 // Output: how you did on a test depending on the grade you got 
 
+#include <stdio.h>
 int main() 
 { 
-    char grade = 'A' 
+    char grade = 'A'; // defines the user's grade
     
     switch(grade){   // type switch and then put the variable you want to check in () 
     case 'A' :   // case represents the possibility of what the variable is  
