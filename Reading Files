@@ -1,6 +1,7 @@
 // Example 1:  
 // Output: Jim – salesman  
 
+#include <stdio.h>
 int main() 
 { 
     char line[255];   // Variable line will store text up to 255 characters  
@@ -17,10 +18,11 @@ int main()
     return 0; 
 } 
 
- 
+
 // Example 2:  
 // Output: Pam – accountant  
 
+#include <stdio.h>
 int main() 
 { 
     char line[255];   
