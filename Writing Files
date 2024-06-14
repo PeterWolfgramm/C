@@ -1,9 +1,8 @@
 // Example 1: 
 /*The following code will create a new file called employees that will display: Jim – salesman 
                                                                                 Pam – accountant*/  
-
  
-
+#include <stdio.h>
 int main() 
 { 
     FILE * fpointer = fopen("employees.txt", "w");   // fpointer stores the memory address to the file 
@@ -26,7 +25,7 @@ int main()
           Pam – accountant 
           Oscar – customer service*/  
 
-
+#include <stdio.h>
 int main() 
 { 
     FILE * fpointer = fopen("employees.txt", "a");   // mode a allows to add to a file 
