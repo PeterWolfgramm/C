@@ -1,72 +1,39 @@
-Example1: 
-
+// Example 1: 
+/*Output: 1 
+           2 
+           3 
+           4 
+           5*/
  
-
-//Output: 1 
-
-                   2 
-
-                   3 
-
-                   4 
-
-                   5 
-
- 
-
+#include <stdio.h>
 int main() 
-
 { 
-
-int index = 1;  
-
-while(index <= 5){   //While the index is <= 5, the following print function will happen 
-
-printf("%d\n", index); 
-
-index = index + 1;   //At the end of each loop, index increases by 1  
-
-                                  //You can rewrite variable = variable + 1 as variable++ 
-
+    int index = 1;  
+    while(index <= 5){   // While the index is <= 5, the following print function will happen 
+        printf("%d\n", index); 
+        index = index + 1;   // At the end of each loop, index increases by 1  
+                             // You can rewrite variable = variable + 1 as variable++ 
+        } 
+    
+    return 0; 
 } 
 
  
+// Example 2:  
+/*The following program is a do-while loop. The difference between this and a while loop is that in a do-while loop, 
+a function is performed and the variable is incremented before the condition is checked.*/ 
+// Output: 6  
 
-return 0; 
-
-} 
-
- 
-
-Example2:  
-
- 
-
-/*The following program is a do-while loop. The difference between this and a while loop is that in a do-while loop, a function is performed and the variable is incremented before the condition is checked.*/ 
-
-//Output: 6  
-
- 
-
+#include <stdio.h>
 int main() 
-
 { 
-
 int index = 6;  
 
-do {   /*The following print function will be performed and the index will increment before  
+do {   // The following print function will be performed and the index will increment before checking the condition. 
 
-          checking the condition.*/ 
+    printf("%d\n", index); 
+    index = index + 1;     
+    } while(index <= 5); 
 
-printf("%d\n", index); 
-
-index = index + 1;     
-
-} while(index <= 5); 
-
- 
-
-return 0; 
-
+    return 0; 
 } 
-  
