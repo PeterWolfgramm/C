@@ -1,6 +1,7 @@
 // Example 1: 
 // Output: Jim 
 
+#include <stdio.h>
 struct Student{   // Below struct are all the variables containing data 
     char name[50];   // [50] means the variable char name can store up to 50 characters 
     char major [50]; 
@@ -24,6 +25,7 @@ int main(){
 // Example 2: 
 // Output: Pam 
 
+#include <stdio.h>
 struct Student{   
     char name[50]; 
     char major [50]; 
@@ -34,10 +36,10 @@ struct Student{
 int main(){ 
     struct Student student2;   // The name of the container within the struct name can be modified to display the different attributes of the new container. 
     
-    student1.age = 20;  
-    student1.gpa = 2.5; 
-    strcpy(student1.name, "Pam");   
-    strcpy(student1.major, "Art"); 
+    student2.age = 20;  
+    student2.gpa = 2.5; 
+    strcpy(student2.name, "Pam");   
+    strcpy(student2.major, "Art"); 
     
     printf("%s", student2.name); 
     
